@@ -526,7 +526,7 @@ async function addMember() {
 }
 
 function exportDataExcel() {
-  let csvContent = "data:text/csv;charset=utf-8,Loai,Noi Dung,So Tien,Thanh Vien\n";
+  let csvContent = "data:text/csv;charset=utf-8,Loai,Noi dung,So Tien,Thanh Vien\n";
   transactions.forEach(t => {
     csvContent += `${t.type},${t.note},${t.amount},${getMemberName(t.memberId)}\n`;
   });
